@@ -83,6 +83,11 @@ std::unique_ptr<BSTNode> BST::removeHelper(std::unique_ptr<BSTNode>& node, int i
     return std::move(node);
 }
 
+/**
+ * const:
+ * these functions do not modify the internal state of the object 
+ * — i.e., they don’t change any member variables of the class.
+ */
 void BST::inOrderTraversal() const {
     Logger::log("BST In-Order Traversal Start");
     inOrderHelper(root.get());

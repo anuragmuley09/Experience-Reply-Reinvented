@@ -23,7 +23,7 @@ public:
     const Experience* getHighestPriority() const;
     BSTNode* getNode(int id);
 
-    // 🆕 New debug functions
+    // New debug functions
     void printHashMap() const;
     void printQueue() const;
 

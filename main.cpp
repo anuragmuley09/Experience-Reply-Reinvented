@@ -6,6 +6,9 @@
 #include <iostream>
 
 // Lightweight busy wait function to simulate delay without high CPU usage
+// cause for some reason my g++ isnt upto date.
+// thus for simualiting "thread" functionality im using this "busywait" function
+// mannn i need to update my g++!
 void lightBusyWait(int ms) {
     // Lower iteration count per ms to reduce CPU burn
     const int iterationsPerMs = 10000;  // Adjust as needed
